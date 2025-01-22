@@ -25,7 +25,7 @@ def yedek_al():
                 try:
                     zipf.write(file_path, os.path.relpath(file_path, kaynak_klasor))
                 except PermissionError:
-                    print(f"Permission error: Skipping file {file_path}")
+                    print(f"Yetersiz yetki: {file_path} dosyasıa tlanıyor")
     
     print(f"Yedek alındı: {hedef_yedek_dosya}")
     
